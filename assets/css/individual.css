@@ -2322,7 +2322,7 @@ textarea:focus {
 }
 
 .produ-indi .serv{
-  min-height: 495px;
+  min-height: 525px;
   background: url(../img/sign-bg.png) no-repeat top;
   background-size: cover;
   border-radius: 10px;
@@ -2331,7 +2331,7 @@ textarea:focus {
 .produ-indi .serv .prog{
   height: 200px;
   overflow: hidden;
-  margin-top: 240px;
+  margin-top: 285px;
 }
 .produ-indi .serv .prog h3{
 color: #fff;
@@ -2369,6 +2369,8 @@ font-size: 25px;
 
       .produ-indi .backServ .serv-title{
         padding: 10px;
+        height: 75px;
+        overflow: hidden;
         }
         .produ-indi .backServ .serv-title h3{
           color: #50ad9e;

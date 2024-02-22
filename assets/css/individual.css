@@ -2321,8 +2321,23 @@ textarea:focus {
   padding-bottom:20px ;
 }
 
+
+.produ-indi .fontsulations{
+font-size: 22px;
+font-weight: bold;
+color: #00CDAC;
+margin-bottom: 20px;
+}
+.produ-indi .font_eroors{
+  font-size: 23px;
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 30px;
+  line-height: 40px;
+  }
+
 .produ-indi .serv{
-  min-height: 525px;
+  min-height: 540px;
   background: url(../img/sign-bg.png) no-repeat top;
   background-size: cover;
   border-radius: 10px;
@@ -2362,6 +2377,7 @@ font-size: 25px;
       background: #ffffff;
       border-radius: 10px;
       margin-bottom: 20px;
+      border:1px solid #ddd;
       }
       .produ-indi .backServ:hover{
         box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
@@ -2372,6 +2388,10 @@ font-size: 25px;
         height: 75px;
         overflow: hidden;
         }
+        .produ-indi .backServ .serv-title h3:hover{
+          color: #000;
+          cursor: pointer;
+          }
         .produ-indi .backServ .serv-title h3{
           color: #50ad9e;
           font-size: 15px;
@@ -2392,9 +2412,9 @@ font-size: 25px;
           padding-bottom: 5px;
           }
           .produ-indi .backServ .serv-price span{
-            font-size: 12px;
-            font-weight: normal;
-            color: #40a695;
+            font-size: 17px;
+            font-weight: bold;
+            color: #052376;
             text-wrap: nowrap;
             }
             .produ-indi .backServ .iconServ{
@@ -2414,7 +2434,22 @@ font-size: 25px;
             .produ-indi .backServ .endserv p{
               text-align: right;
               font-size: 15px;
+              margin-bottom: 0;
         }
+        .produ-indi .backServ .endserv a.bbb{
+          color: #000;
+          text-align: right;
+          font-size: 15px;
+          margin-bottom: 0;
+          display: contents;
+    }
+    .produ-indi .backServ .endserv a.bbb:hover{
+      color: #00CDAC;
+      border-bottom: 1px solid #00CDAC;
+      margin-bottom: 20px;
+      width: 80px;
+      text-align: center;
+}
         .produ-indi .backServ .endserv .links{
           text-align: left;
     }
@@ -2425,7 +2460,350 @@ font-size: 25px;
           border-radius: 10%;
     }      
 
-  
+    .produ-indi .backServ .endserv .devline{
+      border: 1px solid transparent;
+      margin-bottom: 20px;
+      width: 80px;
+      text-align: center;
+    }
+
+    .position-relative {
+      position: relative !important;
+    }
+    
+.z-index-9 {
+  z-index: 9 !important;
+}
+.mt-n9 {
+  margin-top: -11rem !important;
+} 
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.dddddd{
+  background: #ddd;
+}
+
+
+
+/*--pageCont----*/
+.pageCont{
+  min-height: 750px;
+  background-color: #fff;
+  }
+  .pageCont .cont{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+  .pageCont .fontsulations{
+  text-align: right;
+  color: #289b88;
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 10px;
+    }
+    .pageCont .font_eroors{
+      text-align: right;
+      color: #505C6D;
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 0;
+        }
+
+        .pageCont .he-100{
+          height: 360px;
+    overflow: hidden;
+        }
+
+     .transparent_border{
+      border: 1px solid transparent;
+     }
+
+
+        .pageCont .pricing-box {
+          border-radius: 10px;
+          border: 1px solid transparent;
+          background:url(../img/lnading.png) #fff no-repeat center;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 10px;
+          padding-right: 20px;
+          position: relative;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          box-shadow: 0 0 3.125rem rgba(0, 0, 0, 0.1) !important;
+        }
+        .pageCont .pricing-box.ac {
+          border: 1px solid #ddd;
+        }
+
+        .pageCont .pricing-box:hover {
+          border-color: transparent;
+          -webkit-box-shadow: 0px 0px 40px rgba(83, 88, 93, 0.1);
+                  box-shadow: 0px 0px 40px rgba(83, 88, 93, 0.1);
+                  border: 1px solid #ddd;
+
+        }
+        
+
+        .pageCont .pricing-box .iconProd {
+          text-align: right;
+        }
+        .pageCont .pricing-box .iconProd img {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 15px;
+          border: 1px solid #fcfcfc;
+          border-radius: 10px;
+          box-shadow: 0 0 1000px 10px rgba(0, 0, 0, 0.1);
+          background: #fcfcfc;
+        }
+
+
+
+        
+        .pageCont .pricing-box .title{
+          text-align: right;
+          font-size: 20px;
+          font-weight: 800;
+          color: #289b88;
+          margin-bottom: 12px;
+        }
+
+        
+        .pageCont .pricing-box .plan-price {
+          text-align: center;
+        }
+
+        .pageCont .pricing-box .price {
+          font-size: 15px;
+          font-weight: 400;
+          display: inline-block;
+          line-height: 100px;
+          text-align: center;
+          background: #fcfcfc;
+          width: 100px;
+          border-radius: 100%;
+          color: #052376;
+          border: 1px solid #fbfbfb;
+          text-wrap: nowrap;
+        }
+        .pageCont .pricing-box .price sup {
+          font-size: 24px;
+          font-weight: 900;
+          font-size: 20px;
+          border-bottom: 1px solid #ddd;
+        }
+        
+        .pageCont .pricing-box .price:hover {
+          -webkit-box-shadow: 0 0 1000px 10px rgba(0, 0, 0, 0.1);;
+          box-shadow: 0 0 1000px 10px rgba(0, 0, 0, 0.1);;
+        }
+
+        .pageCont .pricing-box .despT {
+          font-size: 16px;
+          font-weight: 300;
+          color: #333;
+          text-align: center;
+          margin-top: 10px;
+        }
+        .pageCont .pricing-box .linkT {
+          text-align: center;
+          margin-bottom: 10px;
+          margin-top: 25px;
+        }  
+        .pageCont .pricing-box a.btnb {
+          color: #10907b;
+          border: 1px solid #e8ebf3;
+          padding: 7px 10px 7px 10px;
+          border-radius: 5px;
+          font-size: small;
+        }
+        .pageCont .pricing-box a.btnb:hover {
+          color: #fff;
+          background: linear-gradient(to right, #108f7b, #505C6D) !important;
+
+        }
+        .pageCont .pricing-box a.aaaa {
+          text-align: left;
+          margin-left: 10px;
+          background: linear-gradient(to right, #108f7b, #505C6D) !important;
+          padding: 0 10px;
+          border-radius: 10%;
+        }
+
+        .text-left{
+          text-align: left;
+         }
+         .text-right{
+          text-align: right;
+         }
+         .shadow {
+          box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+      }
+      .z-index-9 {
+        z-index: 9 !important;
+    }
+    .pb-0 {
+      padding-bottom: 0 !important;
+  }
+  .mt-n9 {
+    margin-top: -14rem !important;
+}
+
+.position-relative {
+  position: relative;
+}
+/*pricing ribbon*/
+.pageCont .ribbon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  text-align: left;
+}
+.pageCont .ribbon span {
+  font-size: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 100px;
+  display: block;
+  background: linear-gradient(150deg, #97c74e 0%, #2ab9a5 100%);
+  -webkit-box-shadow: 0 3px 10px -5px black;
+          box-shadow: 0 3px 10px -5px black;
+  position: absolute;
+  top: 19px;
+  left: -21px;
+}
+.pageCont .ribbon span::before {
+  content: "";
+  position: absolute;
+  right: -11px;
+  top: 100%;
+  z-index: -1;
+  border-right: 3px solid #343a40;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #343a40;
+}
+.pageCont .ribbon span::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 100%;
+  z-index: -1;
+  border-right: 3px solid transparent;
+  border-left: 3px solid #343a40;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #343a40;
+}
+
+
+.secction-product {
+  background: transparent;
+}
+.secction-product .up-gal{
+  -webkit-box-shadow: 0 0 3.125rem rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 3.125rem rgba(0, 0, 0, 0.1) !important;
+  --bs-bg-opacity: 1;
+  border-radius: 10px;
+  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+
+
+
+/*pricing*/
+.pageCont .package .card {
+  border-radius: 0;
+  border: none;
+  border-bottom: 0;
+}
+.pageCont .package .card .card-body {
+  z-index: 1;
+}
+.package .card .card-body .offer {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  font-size: 80px;
+  font-weight: 600;
+  color: rgba(83, 88, 93, 0.1);
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+.package .nav {
+  border: none;
+}
+.package .nav-link {
+  border: none;
+  margin-right: 0px !important;
+  background: #f0f1f3;
+  padding: 10px 20px;
+}
+.package .nav .nav-item:first-child.nav-item a {
+  border-radius: 3px 0px 0px 3px;
+}
+.package .nav .nav-item:last-child.nav-item a {
+  border-radius: 0px 3px 3px 0px;
+}
+
+.package .nav .nav-link {
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+}
+
+
+.pricing .pricing-box h5, .pricing .pricing-box .h5 {
+  font-weight: 600;
+}
+
+.pricing .pricing-box .price sup {
+  font-size: 30px;
+  font-weight: 600;
+}
+.pricing .pricing-box p {
+  margin: 20px 0;
+}
+.pricing .pricing-box:hover {
+  border-color: transparent;
+  -webkit-box-shadow: 0px 0px 40px rgba(83, 88, 93, 0.1);
+          box-shadow: 0px 0px 40px rgba(83, 88, 93, 0.1);
+}
+
+/*pricing-dark*/
+.pricing.pricing-dark .pricing-box {
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+.pricing.pricing-dark .pricing-box:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 767.98px) {
+  .pricing .pricing-box {
+    padding: 20px;
+  }
+
+  .package .nav-item {
+    border-bottom: 0;
+    padding: 0px;
+  }
+}
+
 /* index-page  */
 
 
@@ -2450,10 +2828,11 @@ font-size: 25px;
   color: #fff;
   background: #10907b;
 }
-
+/*
 .index-page section {
   background: white;
-}
+}*/
+
 .index-page .gray {
   background: #f2f4f7;
 }
@@ -3685,7 +4064,7 @@ h3.text-center.sub-title {
   color: #fff;
 }
 .bg-white {
-  background-color: unset !important;
+  background: white;
 }
 .account .account-form label {
  

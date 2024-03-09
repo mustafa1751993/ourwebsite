@@ -1,0 +1,482 @@
+/* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    direction: rtl;  
+    font-family: "El Messiri", sans-serif;
+  } */
+
+#regForm {
+    background-color: transparent;
+    margin: auto;
+    padding: 5px 40px;
+    width: 100%;
+    min-width: 400px;
+}
+
+#regForm h1 {
+    text-align: center;
+}
+
+/*
+#regForm input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+}*/
+
+/* Mark input boxes that gets an error on validation: */
+#regForm input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+
+#regForm .tabsTitle .aTitle {
+    color: #fff;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#regForm .tabsTitle .Tline {
+    margin-bottom: 10px;
+    width: 50px;
+    background: #fff;
+    height: 2px;
+    display: block;
+}
+.decc .wer{
+display: flex;
+}
+.ml-30{
+margin-left: 35px;
+}
+.pl-0{
+    padding-left: 0;
+}
+
+#regForm .tab {
+    display: none;
+}
+
+#regForm .tab .servData h3 {
+    text-align: right;
+    margin-right: 10px;
+    font-weight: 400;
+    color: #eee;
+}
+
+#regForm button {
+    background-color: #fff;
+    color: #04AA6D;
+    border: none;
+    padding: 20px 40px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#regForm .btnBackk {
+    border: 1px solid #30353b;
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    background: #30353b;
+}
+
+#regForm .btnNextt {
+    border: 1px solid #29b3ad;
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    background: linear-gradient(272.83deg, #2aac9e 2.66%, #28bcc0 96.93%);
+}
+
+#regForm button:hover {
+    opacity: 0.8;
+}
+
+/* #regForm  #prevBtn {
+    background-color: #bbbbbb;
+  }*/
+
+/* Make circles that indicate the steps of the form: */
+#regForm .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 20px;
+    background-color: #30353b;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.2;
+}
+.dataTabs{
+width:80%;
+overflow: hidden;
+}
+
+.dataTabs .labelss {
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.dataTabs p{
+ color: #fff;
+ font-weight: 900;
+}
+.dataTabs p span{
+    color: #eee;
+    font-weight: 300;
+   }
+#regForm .step .lin {
+    border-bottom: 1px solid;
+    border-color: linear-gradient(to right, #ffffff, #c5d0e0);
+    display: inline-block;
+    width: 47px;
+    margin-bottom: 8px;
+    margin-right: 13px;
+}
+
+#regForm .step::after {
+    height: 1px;
+    width: 50px;
+    background: #eee;
+    display: block;
+}
+
+#regForm .step::before {
+    height: 1px;
+    width: 50px;
+    background: #eee;
+    display: block;
+}
+
+#regForm .step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+#regForm .step.finish {
+    background-color: #30353b;
+}
+
+p.color-individual.me-2 {
+    color: #fff !important;
+}
+
+.contenerslect {
+    display: flex;
+}
+
+.account .account-form label {
+    padding-inline-start: 1.8rem;
+}
+
+.account .account-form label {
+    color: rgb(255 255 255);
+}
+
+.account .account-form label {
+    font-size: 14px;
+    color: rgba(98, 104, 120, 1);
+    margin-bottom: 0.5rem;
+    padding-inline-start: 0.8rem;
+}
+
+.containerr {
+    justify-content: space-evenly;
+    height: 180px;
+    width: 230px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+    position: relative;
+    color: #fff;
+    transition: 0.5s;
+    display: inline-block;
+    background-color: #30353B;
+    padding: 9px 50px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+a#option1 {
+    white-space: nowrap;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+}
+
+label.containerr.option2 a {
+    white-space: nowrap;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+}
+
+a#option3 {
+    white-space: nowrap;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+}
+
+.containerr input:checked~.checkmark {
+    background: linear-gradient(272.83deg, #2aac9e 2.66%, #28bcc0 96.93%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 180px;
+    width: 230px;
+    border-radius: 5%;
+    justify-content: space-evenly;
+}
+.close-btn-custom{
+    left: 40px;
+}
+/*.containerr:hover input ~ .checkmark {
+    display: block;
+    box-shadow: inset 0 49px 80px rgba(255, 255, 225, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 180px;
+    width: 230px;
+    border-radius: 6%;
+    justify-content: space-evenly;
+}*/
+#payment .account-form input,
+#payment .nice-select,
+#tiket-modal .nice-select,
+.request-service-form .form-group input {
+    background: #f2f4f7d1 !important;
+    border-radius: 18px;
+    border: 0;
+    height: 48px;
+    color: #1c1d22;
+    font-size: 16px;
+    box-shadow: none;
+    border: 1px solid rgba(221, 223, 229, 1);
+}
+.nice-select:after{
+    border-bottom: 2px solid #999;
+    border-right: 2px solid #999;
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    width: 5px;
+}
+
+.containerr input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.w-90 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    width: 50px;
+    height: 50px;
+}
+
+.justify-content-left {
+    justify-content: left;
+}
+
+.padding45left {
+    padding-left: 45px;
+}
+
+.ml-2 {
+    margin-left: 0;
+}
+
+.mt--2 {
+    margin-top: -2rem !important;
+}
+
+.modal-body h3.colr {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/*@import "compass";*/
+/* Stepper*/
+/*.stepper {
+    .nav-tabs {
+        position: relative;
+    }
+
+    .nav-tabs>li {
+        width: 25%;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            background: #f1f1f1;
+            display: block;
+            width: 100%;
+            height: 5px;
+            top: 30px;
+            left: 50%;
+            z-index: 1;
+        }
+
+        &.completed {
+            &::after {
+                background: #34bc9b;
+            }
+        }
+
+        &:last-child {
+            &::after {
+                background: transparent;
+            }
+        }
+
+        &.active:last-child {
+            .round-tab {
+                background: #34bc9b;
+
+                &::after {
+                    content: '✔';
+                    color: #fff;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    top: 0;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .nav-tabs [data-toggle='tab'] {
+        width: 25px;
+        height: 25px;
+        margin: 20px auto;
+        border-radius: 100%;
+        border: none;
+        padding: 0;
+        color: #f1f1f1;
+    }
+
+    .nav-tabs [data-toggle='tab']:hover {
+        background: transparent;
+        border: none;
+    }
+
+    .nav-tabs>.active>[data-toggle='tab'],
+    .nav-tabs>.active>[data-toggle='tab']:hover,
+    .nav-tabs>.active>[data-toggle='tab']:focus {
+        color: #34bc9b;
+        cursor: default;
+        border: none;
+    }
+
+    .tab-pane {
+        position: relative;
+        padding-top: 50px;
+    }
+
+    .round-tab {
+        width: 25px;
+        height: 25px;
+        line-height: 22px;
+        display: inline-block;
+        border-radius: 25px;
+        background: #fff;
+        border: 2px solid #34bc9b;
+        color: #34bc9b;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        font-size: 14px;
+
+    }
+
+    .completed .round-tab {
+        background: #34bc9b;
+
+        &::after {
+            content: '✔';
+            color: #fff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 0;
+            display: block;
+        }
+    }
+
+    .active .round-tab {
+        background: #fff;
+        border: 2px solid #34bc9b;
+
+        &:hover {
+            background: #fff;
+            border: 2px solid #34bc9b;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .disabled .round-tab {
+        background: #fff;
+        color: #f1f1f1;
+        border-color: #f1f1f1;
+
+        &:hover {
+            color: #4dd3b6;
+            border: 2px solid #a6dfd3;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}*/

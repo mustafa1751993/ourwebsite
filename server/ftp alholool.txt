@@ -1,4 +1,0 @@
-FTP Username: alholool
-FTP server: ftp.alholool.com.sa
-FTP password : PQMv2EgsWhALRBg
-FTP & explicit FTPS port:  21

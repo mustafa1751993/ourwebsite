@@ -1,0 +1,161 @@
+.sld_tooli {
+
+    min-height: 500px;
+    background: #fff;
+    direction: rtl;
+    padding: 40px 0 20px 0;
+}
+
+.sld_tooli .pptitles {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Caption text */
+.text {
+    color: #000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: right;
+    margin-right: 206px;
+    padding-right: 281px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    line-height: 60px;
+    display: block;
+    transition: background-color 0.6s ease;
+    opacity: 0.5;
+}
+
+.mbbbb {
+    margin-bottom: 25px;
+}
+
+.dot_Para {
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 600;
+    opacity: 0.5;
+
+}
+.dot_Para:hover
+ {
+color: #ffb381;
+
+}
+
+.dot_cana {
+    font-size: 15px;
+    font-weight: normal;
+    opacity: 0;
+}
+
+.linDev {
+    border: 1px solid #eee;
+}
+
+
+.active,
+.dot:hover {
+    background-color: #eee;
+    opacity: 1;
+}
+
+.active,
+.dot_cana,
+.dot_Para {
+    opacity: 1;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px;
+
+    }
+}
+/*
+.dotLineVieww {
+    border:1px solid #333 ;
+}*/

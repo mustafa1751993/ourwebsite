@@ -25,7 +25,7 @@
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/individual.css" rel="stylesheet" />
-
+  <link href="../assets/css/Stepper.css" rel="stylesheet" />
 </head>
 
 <body class="index-page">
@@ -41,7 +41,7 @@
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="../index.html">حلولنا</a></li>
+          <!-- <li><a href="../index.html">حلولنا</a></li>-->
           <li><a href="#remote">عن بعد</a></li>
           <li><a href="#home-visit">زيارة منزلية</a></li>
           <li><a href="#pricing">باقات الأفراد </a></li>
@@ -54,14 +54,14 @@
       <div class="d-flex gap-4 align-items-center">
         <div class="feat-icon">en</div>
         <div class="d-flex gap-3 align-items-center">
-         <!-- <div class="part-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+          <!-- <div class="part-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
             aria-controls="offcanvasWithBothOptions">
             <img src="../assets/img/icon/cart-i.svg" alt="cart">
             <div class="num-search d-flex justify-content-center align-items-center">2</div>
           </div>-->
           <div class="part-icon"><img src="../assets/img/icon/search-i.svg" alt="search"></div>
           <li class="btn-nav-profile-name">
-            <a href="#"><span><img src="../assets/img/icon/Profile-1.svg" alt=""> الدخول الى بوابة الأفراد</span></a>
+            <a href="profile.html"><span><img src="../assets/img/icon/Profile-1.svg" alt=""> الدخول الى بوابة الأفراد</span></a>
           </li>
         </div>
       </div>
@@ -86,10 +86,50 @@
       </div>
     </div>
 
+    <div class="descv">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="sub_Titlee"> تجربة دعم متميزة ومتكاملة</p>
+            <h3 class="titlee"> وفر وقتك وجهدك نقدم لك دعم وحل لمشاكل الكمبيوتر وانت بمكانك. </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../assets/img/main-busniss-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> متابعة الجلسة </h5>
+                <p class="card-text"> جلسة مسجلة لعملية الدعم الفني تخليك على اطلاع بالتفاصيل </p>
 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../assets/img/main-busniss-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> التواصل والسهولة </h5>
+                <p class="card-text"> دردشة فورية وصوتية مع أدوات تحليل للتواصل مع الفني مباشرة </p>
 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="../assets/img/main-busniss-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> حماية مطلقة </h5>
+                <p class="card-text"> بياناتك وجهازك بأمان من خلال موافقتك على تفعيل المهام </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
     <section class="features-individual-solutions bg-white">
-
       <div class="container">
         <div class="row">
           <div class="col-md-6 d-flex align-items-center">
@@ -137,7 +177,7 @@
         </div>
       </div>
     </section>
-
+-->
 
 
 
@@ -162,9 +202,9 @@
           <div class="col-md-3">
             <div class="serv">
               <div class="prog">
-                <h3>ابجد هوز ابجد هوز</h3>
-                <p>ابجد هوز ابجد هوز ابجد هوز ابجد هوز ابجد هوز</p>
-                <a href="#">ابجد هوز</a>
+                <h3> الدعم عن بعد </h3>
+                <p> احصل على الدعم الذي تحتاجه في دقائق </p>
+                <a href="../remotely.html" target="_blank"> اكتشف الان </a>
               </div>
             </div>
           </div>
@@ -191,14 +231,17 @@
                   <div class="endserv">
                     <div class="row">
                       <div class="col-6">
-                        <a href="#" class="bbb"> شراء الخدمة</a>
+
+
+                        <a href="#" class="bbb" onclick="updateModalContent(1)" data-bs-target="#add-order"
+                          data-bs-toggle="modal"> شراء الخدمة</a>
+                        <!-- <a href="#" class="bbb" onclick="updateModalContent(1)" data-bs-target="#add-orderr" data-bs-toggle="modal"> شراء الخدمة</a>-->
                         <div class="devline"></div>
                       </div>
                       <div class="col-6">
                         <div class="links">
-                          <a href="Individual/home.html#pricing" class="aaaa">
-                            <i class="bi bi-chevron-left"></i>
-                          </a>
+                          <a href="#" class="aaaa" onclick="updateModalContent(2)" data-bs-target="#add-orderss"
+                            data-bs-toggle="modal"> <i class="bi bi-chevron-left"></i> </a>
                         </div>
                       </div>
                     </div>
@@ -225,14 +268,14 @@
                   <div class="endserv">
                     <div class="row">
                       <div class="col-6">
-                        <a href="#" class="bbb"> شراء الخدمة</a>
+                        <a href="#" class="bbb" onclick="updateModalContent(1)" data-bs-target="#add-order"
+                          data-bs-toggle="modal"> شراء الخدمة</a>
                         <div class="devline"></div>
                       </div>
                       <div class="col-6">
                         <div class="links">
-                          <a href="Individual/home.html#pricing" class="aaaa">
-                            <i class="bi bi-chevron-left"></i>
-                          </a>
+                          <a href="#" class="aaaa" onclick="updateModalContent(2)" data-bs-target="#add-orderss"
+                            data-bs-toggle="modal"> <i class="bi bi-chevron-left"></i> </a>
                         </div>
                       </div>
                     </div>
@@ -259,14 +302,14 @@
                   <div class="endserv">
                     <div class="row">
                       <div class="col-6">
-                        <a href="#" class="bbb"> شراء الخدمة</a>
+                        <a href="#" class="bbb" onclick="updateModalContent(1)" data-bs-target="#add-order"
+                          data-bs-toggle="modal"> شراء الخدمة</a>
                         <div class="devline"></div>
                       </div>
                       <div class="col-6">
                         <div class="links">
-                          <a href="Individual/home.html#pricing" class="aaaa">
-                            <i class="bi bi-chevron-left"></i>
-                          </a>
+                          <a href="#" class="aaaa" onclick="updateModalContent(2)" data-bs-target="#add-orderss"
+                            data-bs-toggle="modal"> <i class="bi bi-chevron-left"></i> </a>
                         </div>
                       </div>
                     </div>
@@ -295,14 +338,14 @@
                   <div class="endserv">
                     <div class="row">
                       <div class="col-6">
-                        <a href="#" class="bbb"> شراء الخدمة</a>
+                        <a href="#" class="bbb" onclick="updateModalContent(1)" data-bs-target="#add-order"
+                          data-bs-toggle="modal"> شراء الخدمة</a>
                         <div class="devline"></div>
                       </div>
                       <div class="col-6">
                         <div class="links">
-                          <a href="Individual/home.html#pricing" class="aaaa">
-                            <i class="bi bi-chevron-left"></i>
-                          </a>
+                          <a href="#" class="aaaa" onclick="updateModalContent(2)" data-bs-target="#add-orderss"
+                            data-bs-toggle="modal"> <i class="bi bi-chevron-left"></i> </a>
                         </div>
                       </div>
                     </div>
@@ -329,14 +372,16 @@
                   <div class="endserv">
                     <div class="row">
                       <div class="col-6">
-                        <a href="#" class="bbb"> شراء الخدمة</a>
+                        <a href="#" class="bbb" onclick="updateModalContent(1)" data-bs-target="#add-order"
+                          data-bs-toggle="modal"> شراء الخدمة</a>
                         <div class="devline"></div>
                       </div>
                       <div class="col-6">
                         <div class="links">
-                          <a href="Individual/home.html#pricing" class="aaaa">
-                            <i class="bi bi-chevron-left"></i>
-                          </a>
+
+                          <a href="#" class="aaaa" onclick="updateModalContent(2)" data-bs-target="#add-orderss"
+                            data-bs-toggle="modal"> <i class="bi bi-chevron-left"></i> </a>
+
                         </div>
                       </div>
                     </div>
@@ -363,14 +408,14 @@
                   <div class="endserv">
                     <div class="row">
                       <div class="col-6">
-                        <a href="#" class="bbb"> شراء الخدمة</a>
+                        <a href="#" class="bbb" onclick="updateModalContent(1)" data-bs-target="#add-order"
+                          data-bs-toggle="modal"> شراء الخدمة</a>
                         <div class="devline"></div>
                       </div>
                       <div class="col-6">
                         <div class="links">
-                          <a href="Individual/home.html#pricing" class="aaaa">
-                            <i class="bi bi-chevron-left"></i>
-                          </a>
+                          <a href="#" class="aaaa" onclick="updateModalContent(2)" data-bs-target="#add-orderss"
+                            data-bs-toggle="modal"> <i class="bi bi-chevron-left"></i> </a>
                         </div>
                       </div>
                     </div>
@@ -385,7 +430,47 @@
       </div>
     </div>
 
-    <div class="pageCont">
+
+
+    <div class="secction-product mt-n146 pb-0 z-index-9 position-relative">
+      <div class="container ">
+        <div class="up-gal">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <img src="../assets/img/icon/solution-4.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-8">
+              <h5>تشخيص الجهاز أو خدمة عامة</h5>
+
+
+              <p>
+                في حال كنت بحاجة الى تشخيص مشكلة بالجهاز واصلاحه أو طلب حل مشكلة عامة ، سيقوم فريقنا بتقديم تقرير عن
+                حالة
+                الجهاز وما يتطلب لحل المشكلة
+              </p>
+              <h5 class="startto"> تبدأ من 79 ر.س</h5>
+              <div class="row mt-4">
+                <div class="col-md-3">
+                  <a data-bs-target="#add-orderrinputatach" data-bs-toggle="modal"><button class="add-cartssss ma">شراء
+                      الخدمة
+                    </button></a>
+                </div>
+                <div class="col-md-3">
+                  <a href="sloution-details.html?id=service7"><button class="add-detailsss"> <i
+                        class="bi bi-chevron-left"></i> </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="pageCont  mt-n146 pb-0 z-index-8 position-relative">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -407,7 +492,7 @@
 
               <div class="plan-price">
                 <span class="price text-grad">
-                  <sup class="text-grad">99</sup> ر.س </span>
+                  تبدء من &nbsp;&nbsp; <sup class="text-grad">99</sup>&nbsp;&nbsp; ر.س &nbsp;&nbsp;</span>&nbsp;&nbsp;
 
               </div>
               <div class="linkT">
@@ -432,7 +517,7 @@
                 <img src="../assets/img/format.png" />
               </div>
 
-              <h5 class="title">  اعداد الكمبيوتر (فورمات)              </h5>
+              <h5 class="title"> اعداد الكمبيوتر (فورمات) </h5>
               <div class="plan-price">
                 <span class="price text-grad">
                   <sup class="text-grad">189</sup> ر.س </span>
@@ -463,7 +548,7 @@
 
               <div class="plan-price">
                 <span class="price text-grad">
-                  <sup class="text-grad">399</sup> ر.س </span>
+                  تبدء من &nbsp;&nbsp; <sup class="text-grad">399</sup>&nbsp;&nbsp; ر.س &nbsp;&nbsp;</span>&nbsp;&nbsp;
 
               </div>
               <div class="linkT">
@@ -484,41 +569,6 @@
       </div>
     </div>
 
-
-    <div class="secction-product">
-      <section class="single-product page mt-n9 pb-0 z-index-9 position-relative">
-        <div class="container ">
-          <div class="up-gal">
-            <div class="row align-items-center">
-              <div class="col-md-4">
-                <img src="../assets/img/icon/solution-4.png" class="img-fluid" alt="">
-              </div>
-              <div class="col-md-8">
-                <h5>تشخيص الجهاز أو خدمة عامة</h5>
-
-
-                <p>
-                  في حال كنت بحاجة الى تشخيص مشكلة بالجهاز واصلاحه أو طلب حل مشكلة عامة ، سيقوم فريقنا بتقديم تقرير عن
-                  حالة
-                  الجهاز وما يتطلب لحل المشكلة
-                </p>
-                <h5 class="startto"> تبدأ من 79 ر.س</h5>
-                <div class="row mt-4">
-                  <div class="col-md-3">
-                    <a href="sloution-details.html?id=service7"><button class="details">وصف الخدمة</button></a>
-                  </div>
-                  <div class="col-md-3">
-                    <a data-bs-target="#add-orderrinputatach" data-bs-toggle="modal"><button class="add-cart ma">شراء
-                        الخدمة
-                      </button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
 
 
     <section class="page gray container mb-5 pricing-ivdividal" id="pricing">
@@ -739,8 +789,105 @@
     </section>
 
 
-  </main>
 
+
+
+
+
+
+
+
+  </main>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row ">
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>دعم الحلول </h4>
+          <ul>
+            <li><a href="../about.html">من نحن </a></li>
+            <li><a href="../about.html#why-us">لماذا دعم الحلول </a></li>
+            <li><a href="../about.html#vision">الرؤية والرسالة </a></li>
+            <li><a href="#">التوظيف </a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>حلولنا</h4>
+          <ul>
+            <li><a href="home.html">حلول الأفراد</a></li>
+            <li><a href="../business/landing-page/main-business.html">حلول الأعمال</a></li>
+            <li><a href="#">المتجر</a></li>
+            <li><a href="../blog.html">المدونة</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>بوابات الدخول</h4>
+          <ul>
+            <li><a href="../sign-in.html">دخول الأفراد</a></li>
+            <li><a href="../sign-in.html">دخول الأعمال </a></li>
+            <li><a href="../sign-in.html">دخول الموظفين</a></li>
+            <li><a href="../remotely.html">الدخول عن بعد</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>تواصل معنا</h4>
+          <ul>
+            <li><a href="mailto:info@alholool.com.sa">info@alholool.com.sa</a></li>
+            <li><a class="phonrnew" href="tel:966556689265+">+966 55 668 9265</a></li>
+            <li><a href="">تواصل معنا</a></li>
+            <li><a href="#">الرياض - الصحافة</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-subscribe">
+          <h4>اشترك في النشرة البريدية</h4>
+          <p>يتم إرسال نصائح للتعامل مع أجهزة الكمبيوتر وكل ما يتعلق بتقنية المعلومات وأخبارنا</p>
+          <div class="email-subscribe">
+            <input type="email" class="br-10 text-white bg-transparent py-3 pe-5 w-100" placeholder="البريد الالكتروني">
+            <img src="../assets/img/icon/user-white.svg" class="icon">
+            <button type="submit" class="w-100 mt-2 br-10 border-0">اشتراك</button>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-between mt-4">
+        <div class="col-lg-5 col-md-12">
+          <img src="../assets/img/icon/payments/footer-icons.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="social-links d-flex justify-content-between align-items-center ">
+            <a href=""><img src="../assets/img/icon/ic_linked-in.svg" alt="linked-in"></a>
+            <a href=""><img src="../assets/img/icon/ic_youtube.svg" alt="youtube"></a>
+            <a href=""><img src="../assets/img/icon/ic_twitter.svg" alt="twitter"></a>
+
+            <a href=""><img src="../assets/img/icon/ic_facebook.svg" alt="facebook"></a>
+            <a href=""><img src="../assets/img/icon/ic_snap.svg" alt="snapshot"></a>
+            <a href=""><img src="../assets/img/icon/ic_instagram.svg" class="w-75" alt="intagram"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright py-4 mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <span>جميع الحقوق محفوظة لدي حلول 2024</span>
+            <span class="mx-4">س.ت : 1010473622</span>
+            <span>الرقم الضريبي : 3102504003000003</span>
+          </div>
+          <div class="col-md-5 text-start">
+            <a href="../business/privacy-policy.html">سياسة الخصوصية</a>
+            <a href="../business/terms-and-conditions.html" class="mx-3">الشروط والأحكام</a>
+            <a href="">الأسئلة الشائعة</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+  <!--
   <footer id="footer" class="footer">
 
     <div class="container footer-top">
@@ -835,7 +982,7 @@
     </div>
 
   </footer>
-
+-->
 
   <!-- card side bar -->
 
@@ -1219,49 +1366,553 @@
   <div class="modal fade" id="add-order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
+        <!--Header Models-->
         <div class="modal-header">
-          <h2 class="modal-title fs-5 text-center mt-3" id="exampleModalLabel">شراء الخدمة </h2>
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center">
+              <h2 class="modal-title  fs-5" id="exampleModalLabel">شراء الخدمة </h2>
+              <div class="line"></div>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+
           <button type="button" class="close-btn-custom m-0 p-1 position-absolute" data-bs-dismiss="modal"
             aria-label="Close"><img src="../assets/img/icon/fi_x.svg" alt=""></button>
+
         </div>
-        <p class="text-center">هذا النص هو مثال لوصف يمكن يستبدل</p>
-
-        <div class="modal-body py-4">
-          <div class="container-fluid">
-            <div id="payment" class="row">
-              <div class="br-20 bg-white px-3 mb-3 account">
-                <form action="#" class="account-form row">
-
-                  <div class="form-group mb-3">
-                    <label class="label" for="#fn"> السؤال الاول</label>
-                    <input id="fn" type="text" class="form-control border-0" required>
+        <!--body Models-->
+        <div class="modal-body p-0 m-0">
+          <!--Stepper-->
+          <form id="regForm">
+            <!-- One "tab" for each step in the form: -->
+            <!--Tab (1) service -->
+            <div class="tab">
+              <div class="servData">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h3>تثبيت برامج الأوفيس. </h3>
                   </div>
-                  <div class="form-group mb-3">
-                    <label class="label" for="#fn"> السؤال الثاني</label>
-                    <input id="fn" type="text" class="form-control border-0" required>
-                  </div>
-                  <div class="form-group mb-3">
-                    <label class="label" for="#fn"> السؤال الثالث</label>
-                    <input id="fn" type="text" class="form-control border-0" required>
-                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 ml-20">
+                    <div class="ml-30">
+                      <input type="datetime-local" id="datetimepicker" class="flatpickr-input active"
+                        readonly="readonly"
+                        style="background: url(&quot;../assets/img/icon/calendar.svg&quot;) 15px 50% / 24px 24px no-repeat; padding-left: 50px;color: #fff;">
+                    </div>
 
-                  <div class="row justify-content-center ">
-                    <div class="col-md-5">
-                      <a href="cart.html" class="order-btn br-15 w-100 py-10 text-center mt-3"> شراء الخدمة</a>
+                    <!-- <p> <input type="text" placeholder="اختر....." oninput="this.className=''" name="fname"
+                        id="datetimepicker" class="flatpickr-input" readonly="readonly"
+                        style="background: url(&quot;../assets/img/icon/calendar.svg&quot;) 15px 50% / 24px 24px no-repeat; padding-left: 50px;">
+                    </p>-->
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="color-individual  me-2"> نوع رخصة مايكروسوفت اوفيس المراد اعدادها </p>
+                    <div class="contenerslect" oninput="this.className = ''" name="lname">
+                      <label class="containerr option1">
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                        <a id="option1">نسخة مثبتة على الجهاز </a>
+                        <img src="../assets/img/Microsoft_Office_logo_2019_.png" class="img-fluid w-90" alt="microsoft">
+                      </label>
+                      <label class="containerr option2">
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        <a id="option2">سحابية 365</a>
+                        <img src="../assets/img/Microsoft_Office_logo_2019_.png" class="img-fluid w-90" alt="microsoft">
+                      </label>
+                      <label class="containerr option3 c">
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        <a id="option3">لدي نسخة خاصة بي</a>
+                        <img src="../assets/img/Microsoft_Office_logo_2019_.png" class="img-fluid w-90" alt="microsoft">
+                      </label>
                     </div>
                   </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-right padding45left">
+                    <!-- <a href="" data-bs-target="#success-popup" data-bs-toggle="modal" class="order-btn br-15 w-50 py-10 text-center mt-3">اتمام الطلب</a>-->
+                    <div class="counter">
+                      <button id="decrease" onclick="decrease()">-</button>
+                      <span id="count">0</span>
+                      <button id="increase" onclick="increase()">+</button>
+                    </div>
+                  </div>
+                </div>
 
-                </form>
               </div>
-              <!-- -->
             </div>
 
-          </div>
-        </div>
+            <!-- Tab (2) Members -->
+            <div class="tab" style="margin-bottom: 70px;">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="tabsTitle">
+                    <h3 class="aTitle"> بيانات المستخدم </h3>
+                    <span class="Tline"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="dataTabs">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group mb-2">
+                      <label class="label labelss" for="name"> الإسم الأول: </label>
+                      <input type="text" class="form-control" placeholder="........" required="">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group mb-2">
+                      <label class="label labelss" for="name"> الإسم الأخير: </label>
+                      <input type="text" class="form-control" placeholder="........" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group mb-2">
+                      <label class="label labelss" for="name"> البريد الإلكتروني </label>
+                      <input type="email" class="form-control" placeholder="member@comany.com" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group mb-2">
+                      <label class="label labelss" for="name"> رقم الجوال </label>
+                      <input type="number" class="form-control" placeholder="0096 65 321 19 884" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group mb-2">
+                      <label class="label labelss" for="name"> العنوان الوطني </label>
+                      <input type="text" class="form-control" placeholder="منطقة, حي, شارع" required="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!--Tab (3) -->
+            <div class="tab" style="margin-bottom: 70px;">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="tabsTitle">
+                    <h3 class="aTitle"> خدمات عن بعد </h3>
+                    <span class="Tline"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault" style="margin-right: 30px; color: #eee;">
+                      تثبيت مكافح الفيروسات
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked" style="margin-right: 30px; color: #eee;">
+                      تعريف الطابعة علي الكمبيوتر
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault" style="margin-right: 30px; color: #eee;">
+                      اصلاح مشاكل الكمبيوتر
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked" style="margin-right: 30px; color: #eee;">
+                      ضبط اعدادات المودوم
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault" style="margin-right: 30px; color: #eee;">
+                      تثبيت برامج اخري
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="tabsTitle">
+                    <h3 class="aTitle"> زيارة منزلية </h3>
+                    <span class="Tline"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault" style="margin-right: 30px; color: #eee;">
+                      ترقية قطع أو اصلاح هاردوير
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked" style="margin-right: 30px; color: #eee;">
+                      اعداد الكمبيوتر (فورمات)
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked" style="margin-right: 30px; color: #eee;">
+                      استعادة بيانات هارديسك
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab (4) -->
+            <div class="tab" style="margin-bottom: 70px;">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="colr">معلومات الدفع</h3>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item" style="padding-top: 20px;">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button br-15  collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          <img src="../assets/img/icon/master-card.png" alt="">
+                          <div class="Expires-master-card">
+                            <span>Mastercard Ending In 4589</span>
+                            <span>Expires 05/29 | Bassam Ahmed</span>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ad.
+                        </div>
+                      </div>
+                      <div class="actions-master-card mt-2 me-2">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#edit-payment-card">تعديل</a>
+                        <span> | </span>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#add-payment-card">اضافة</a>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="" data-bs-target="#success-popup" data-bs-toggle="modal"
+                    class="order-btn br-15 w-100 py-10 text-center mt-5">إتمام الاشتراك</a>
+                </div>
+              </div>
+
+              <!-- <p><input placeholder="ابجد هوز  ..." oninput="this.className = ''" name="uname"></p>
+              <p><input placeholder="ابجد هوز  ..." oninput="this.className = ''" name="pword" type="password"></p> -->
+            </div>
+
+            <div style="overflow:hiddens; width: 100%; direction: ltr; padding-left: 32px;">
+              <div class="row mt--2 mb-5">
+                <div class="col-md-2">
+                  <a href="#nextBtn" id="nextBtn" class="btnNextt" onclick="nextPrev(1)">التالي</a>
+                </div>
+                <div class="col-md-2 ml-2">
+                  <a href="#prevBtn" id="prevBtn" class="btnBackk" onclick="nextPrev(-1)">رجوع</a>
+                </div>
+                <div class="col-md-8"></div>
+
+
+              </div>
+
+
+
+
+            </div>
+            <!-- Circles which indicates the steps of the form: -->
+            <div class="row">
+              <div class="col-md-12">
+                <div style="text-align:center;">
+                  <span class="step"> <span class="lin"></span> </span>
+                  <span class="step"> <span class="lin"></span> </span>
+                  <span class="step"> <span class="lin"></span> </span>
+                  <span class="step"></span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
+
+  <!--Code JavaScript With Steps-->
+  <script>
+    var currentTab = 0; // Current tab is set to be the first tab (0)
+    showTab(currentTab); // Display the current tab
+
+    function showTab(n) {
+      // This function will display the specified tab of the form...
+      var x = document.getElementsByClassName("tab");
+      x[n].style.display = "block";
+      //... and fix the Previous/Next buttons:
+      if (n == 0) {
+        document.getElementById("prevBtn").style.display = "none";
+      } else {
+        document.getElementById("prevBtn").style.display = "inline";
+      }
+      if (n == (x.length - 1)) {
+        document.getElementById("nextBtn").innerHTML = "ارسال";
+      } else {
+        document.getElementById("nextBtn").innerHTML = "التالي";
+      }
+      //... and run a function that will display the correct step indicator:
+      fixStepIndicator(n)
+    }
+
+    function nextPrev(n) {
+      // This function will figure out which tab to display
+      var x = document.getElementsByClassName("tab");
+      // Exit the function if any field in the current tab is invalid:
+      if (n == 1 && !validateForm()) return false;
+      // Hide the current tab:
+      x[currentTab].style.display = "none";
+      // Increase or decrease the current tab by 1:
+      currentTab = currentTab + n;
+      // if you have reached the end of the form...
+      if (currentTab >= x.length) {
+        // ... the form gets submitted:
+        document.getElementById("regForm").submit();
+        return false;
+      }
+      // Otherwise, display the correct tab:
+      showTab(currentTab);
+    }
+
+    function validateForm() {
+      // This function deals with validation of the form fields
+      var x, y, i, valid = true;
+      x = document.getElementsByClassName("tab");
+      y = x[currentTab].getElementsByTagName("input");
+      // A loop that checks every input field in the current tab:
+      //  for (i = 0; i < y.length; i++) {
+      // If a field is empty...
+      // if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      //  y[i].className += " invalid";
+      // and set the current valid status to false
+      // valid = false;
+      // }
+      // }
+      // If the valid status is true, mark the step as finished and valid:
+      if (valid) {
+        document.getElementsByClassName("step")[currentTab].className += " finish";
+      }
+      return valid; // return the valid status
+    }
+
+    function fixStepIndicator(n) {
+      // This function removes the "active" class of all steps...
+      var i, x = document.getElementsByClassName("step");
+      for (i = 0; i < x.length; i++) {
+        x[i].className = x[i].className.replace(" active", "");
+      }
+      //... and adds the "active" class on the current step:
+      x[n].className += " active";
+    }
+  </script>
+
+
+
+
+
+
+
+  <div class="modal fade pup_up" id="add-orderss" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <!--Header Models-->
+        <div class="modal-header">
+          <!-- <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 text-center">
+            <h2 class="modal-title  fs-5" id="exampleModalLabel"> ffffff  </h2>
+            <div class="line"></div>
+          </div>
+          <div class="col-md-4"></div>
+          </div>-->
+
+          <button type="button" class="close-btn-custom m-0 p-1 position-absolute" data-bs-dismiss="modal"
+            aria-label="Close"><img src="../assets/img/icon/fi_x.svg" alt=""></button>
+
+        </div>
+        <!--body Models-->
+        <div class="modal-body p-0 m-0">
+          <div class="marg" style="margin-top: 40px;">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="head_titless"> ابجد هوز ابجد هوز </h3>
+              </div>
+              <div class="col-md-6 text-left">
+                <a href="#" class="btnCart"> شراء الخدمة </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="imgs_title aos-initt aos-animate" id="afrad">
+                <p class="parg">
+                  ابجد هوز ابجد هوز ابجد هوز ابجد هوز ابجد هوز ابجد هوز ابجد هوز ابجد هوز ابجد هوز ابجد هوز ابجد هوز
+                  ابجد هوز ابجد هوز
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col_dow">
+
+            <div class="row">
+              <div class="col-md-3 d-flex align-items-center ppdd20">
+                <img src="../assets/img/icon/user33.svg" class="ms-3" alt="icon">
+                <h3>ابجد هوز </h3>
+              </div>
+              <!--
+            <div class="col-md-3" style="padding-top: 30px;">
+            <i class="bi bi-app-indicator icon-prop" style="color: #075449; font-size: 20px;"></i>  ابجد هوز ابجد هوز 
+            </div>-->
+              <div class="col-md-3">
+                <div class="accc text-center">
+                  <div>
+                    <img src="../assets/img/computer-1-1 1.png" />
+                  </div>
+                  <p> ابجد هوز ابجد هوز ابجد </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="accc text-center">
+                  <div>
+                    <img src="../assets/img/computer-1-1 1.png" />
+                  </div>
+                  <p> ابجد هوز ابجد هوز ابجد </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="accc text-center">
+                  <div>
+                    <img src="../assets/img/computer-1-1 1.png" />
+                  </div>
+                  <p> ابجد هوز ابجد هوز ابجد </p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="col_dow">
+            <div class="row">
+              <div class="col-md-3">
+
+              </div>
+              <div class="col-md-9">
+                <p style="margin-top: 20px; margin-bottom: 20px;">
+                  ابجد هوز ابجد هوز ابجد هوز ابجد هوز ابجد هوز ابجد هوز ابجد هوز
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 d-flex align-items-center ppdd20">
+                <img src="../assets/img/icon/setting33.svg" class="ms-3" alt="icon">
+                <h3>ابجد هوز </h3>
+              </div>
+              <div class="col-md-3">
+                <div class="accc text-center">
+                  <div>
+                    <h3 class="ac1">ابجد هوز</h3>
+                  </div>
+                  <p class="ac2"> ابجد هوز ابجد هوز ابجد ابجد هوز ابجد هوز ابجد </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="accc text-center">
+                  <div>
+                    <h3 class="ac1">ابجد هوز</h3>
+                  </div>
+                  <p class="ac2"> ابجد هوز ابجد هوز ابجد ابجد هوز ابجد هوز ابجد </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="accc text-center">
+                  <div>
+                    <h3 class="ac1">ابجد هوز</h3>
+                  </div>
+                  <p class="ac2"> ابجد هوز ابجد هوز ابجد ابجد هوز ابجد هوز ابجد </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col_dow">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="sectu">
+                  <p> مسؤوليات العميل </p>
+                </div>
+                <div class="sub_sectu">
+                  <p>ابجد هوز ابجد هوز ابجد هوز</p>
+                  <p>ابجد هوز ابجد هوز ابجد هوز</p>
+                  <p>ابجد هوز ابجد هوز ابجد هوز</p>
+                  <p>ابجد هوز ابجد هوز ابجد هوز</p>
+                  <p>ابجد هوز ابجد هوز ابجد هوز</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <div class="modal fade custom-add" id="add-orderr" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -1361,8 +2012,6 @@
 
   <!-- ======================
 -->
-
-
   <div class="modal fade custom-add" id="add-orderrtow" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -1378,13 +2027,8 @@
             <div id="payment" class="row">
               <div class="br-20 bg-white px-3 mb-3 account">
                 <form action="#" class="account-form row">
-
-
                   <h3 class="col-3 me-2  strong-3"> اختر الوقت المناسب لجلسة الدعم عن بعد </h3>
-
                   <div class="br-20 bg-white mb-3 ps-0 account row ">
-
-
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
                     <input type="text" id="datetimepicker">
                     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -1414,12 +2058,10 @@
                           <input type="radio" name="radio">
                           <span class="checkmark"></span>
                         </label>
-
                         <input id="fn" type="text" class="fname1 c" placeholder="" required />
                       </div>
                     </div>
                   </div>
-
                   <div class="col-12 d-flex justify-content-center">
                     <a href="" data-bs-target="#success-popup" data-bs-toggle="modal"
                       class="order-btn br-15 w-50 py-10 text-center mt-3">اتمام الطلب</a>
@@ -1429,15 +2071,12 @@
                       <button id="increase">+</button>
                     </div>
                   </div>
-
                 </form>
               </div>
               <!-- -->
             </div>
-
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -1456,12 +2095,8 @@
             <div id="payment" class="row">
               <div class="br-20 bg-white px-3 mb-3 account">
                 <form action="#" class="account-form row">
-
-
                   <h3 class="col-3 me-2  strong-3"> اختر الوقت المناسب لجلسة الدعم عن بعد </h3>
-
                   <div class="br-20 bg-white mb-3 ps-0 account row ">
-
                     <!-- <div class="col-md-6">
                               <div class="form-group mb-3">
                                 <label class="label" for="#fn">الاسم</label>
@@ -1471,7 +2106,6 @@
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
                     <input type="text" id="datetimepicker">
                     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
                     <script>
                       flatpickr("#datetimepicker", {
                         enableTime: true,
@@ -1488,26 +2122,10 @@
                     </script>
                     <div class="col-md-12">
                       <p class="color-individual  me-2"> نوع رخصة ما يكروسوفت اوفيس المراد اعدادها </p>
-
-
-
                       <input id="fn" type="text" class="fname1" required>
-
-
-
-
-
-
-
                     </div>
-
-
-
-
-
                     <!--<p class="color-individual me-2">الرجاء إدخال التاريخ والوقت ليتمكن الفني من خدمتك</ح>-->
                   </div>
-
                   <div class="col-12 d-flex justify-content-center">
                     <a href="" data-bs-target="#success-popup" data-bs-toggle="modal"
                       class="order-btn br-15 w-50 py-10 text-center mt-3">اتمام الطلب</a>
@@ -1517,19 +2135,15 @@
                       <button id="increase">+</button>
                     </div>
                   </div>
-
                 </form>
               </div>
               <!-- -->
             </div>
-
           </div>
         </div>
-
       </div>
     </div>
   </div>
-
   <div class="modal fade custom-add" id="add-orderrinputatach" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -1544,14 +2158,10 @@
         <div class="modal-body pb-4 pt-0">
           <div class="container-fluid">
             <div id="payment" class="row">
-              <div class="br-20 bg-white px-3 mb-3 account">
+              <div class="br-20 px-3 mb-3 account">
                 <form action="#" class="account-form row">
-
-
                   <h3 class="col-3 me-2  strong-3"> اختر الوقت المناسب لجلسة الدعم عن بعد </h3>
-
-                  <div class="br-20 bg-white mb-3 ps-0 account row ">
-
+                  <div class="br-20 mb-3 ps-0 account row ">
                     <!-- <div class="col-md-6">
                               <div class="form-group mb-3">
                                 <label class="label" for="#fn">الاسم</label>
@@ -1561,7 +2171,6 @@
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
                     <input type="text" id="datetimepicker">
                     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
                     <script>
                       flatpickr("#datetimepicker", {
                         enableTime: true,
@@ -1577,40 +2186,24 @@
                       });
                     </script>
                     <div class="col-md-12">
-                      <div class="atach c">
+                      <div class="atach c" style="margin-top: 40px;">
                         <p class="color-individual  me-2"> وش المشكلة الرئيسية اللي تعاني منها بالجهاز
                         </p>
                         <p class="color-individual  me-2">ارفق لنا صورة توضيحية ان وجدت
                         </p>
                       </div>
-
                       <div class="atach">
                         <div class="fname01">
                           <input id="fn" type="text" class="fname1" required>
                         </div>
                         <div class="fname011">
-
                           <input type="file" id="upload" hidden />
                           <label class="labelupload" for="upload"> اختر ملف</label>
-
-
-
-
                         </div>
                       </div>
-
-
-
-
                     </div>
-
-
-
-
-
                     <!--<p class="color-individual me-2">الرجاء إدخال التاريخ والوقت ليتمكن الفني من خدمتك</ح>-->
                   </div>
-
                   <div class="col-12 d-flex justify-content-center">
                     <a href="" data-bs-target="#success-popup" data-bs-toggle="modal"
                       class="order-btn br-15 w-50 py-10 text-center mt-3">اتمام الطلب</a>
@@ -1620,43 +2213,33 @@
                       <button id="increase">+</button>
                     </div>
                   </div>
-
                 </form>
               </div>
               <!-- -->
             </div>
-
           </div>
         </div>
-
       </div>
     </div>
   </div>
-
   <!--========without option order=======-->
   <script>
     const decreaseBtn = document.getElementById("decrease");
     const increaseBtn = document.getElementById("increase");
     const countSpan = document.getElementById("count");
-
     let count = 0;
-
     decreaseBtn.addEventListener("click", () => {
       count--;
       updateCount();
     });
-
     increaseBtn.addEventListener("click", () => {
       count++;
       updateCount();
     });
-
     function updateCount() {
       countSpan.textContent = count;
     }
   </script>
-
-
   <!-- Renew subscription Modal  -->
   <div class="modal fade" id="client-responsibilities" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
@@ -1669,7 +2252,6 @@
         </div>
         <div class="modal-body my-3">
           <div class="container">
-
             <ul>
               <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفسنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى</li>
               <li>هذا النص هو مثال لنص يمكن أن يستبدل في نفس </li>
@@ -1678,11 +2260,9 @@
             </ul>
           </div>
         </div>
-
       </div>
     </div>
   </div>
-
   <!-- add order Modal  -->
   <div class="modal fade" id="complaint" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -1698,7 +2278,6 @@
             <div id="payment" class="row">
               <div class="br-20 bg-white px-3 mb-3 account">
                 <form action="#" class="account-form row">
-
                   <!--  <div class="form-group mb-3">
                     <label class="label" for="#fn"> عنوان الشكوى</label>
                     <input id="fn" type="text" class="form-control border-0" required>
@@ -1713,26 +2292,19 @@
                     <textarea class="form-control br-18" id="exampleFormControlTextarea1" rows="7"
                       placeholder="قم بكتابة اقتراحات ممكن تعالج مشكلتك "></textarea>
                   </div>
-
                   <div class="row justify-content-center ">
                     <div class="col-md-5">
                       <a href="" class="order-btn br-15 w-100 py-10 text-center mt-3">تقديم الشكوى</a>
                     </div>
                   </div>
-
                 </form>
               </div>
             </div>
-
           </div>
         </div>
-
       </div>
     </div>
   </div>
-
-
-
   <script>
     // مصفوفة بالعناصر ومحتواها
     const items = [
@@ -1818,12 +2390,9 @@
         option2: ' 255',
         fname1: ' 512'
       },
-
     ];
-
     function updateModalContent(index) {
       const item = items[index];
-
       // تحديث عنوان الخدمة
       document.querySelector('#add-orderr .sub-title').innerText = item.serviceName;
       document.querySelector('#add-orderrtow .sub-title').innerText = item.serviceName;
@@ -1841,14 +2410,23 @@
       document.querySelector('#add-orderr .containerr.option3 a').innerText = item.option3;
       document.querySelector('#add-orderrinput .fname1').innerText = item.fname1;
       document.querySelector('#add-orderr .col-3.me-2.strong-3').innerText = item.titlechoes;
-
-
-
-
-
-
-
-
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
       // تحديث نوع رخصة Microsoft Office
       const licenseRadios = document.querySelectorAll('#add-orderr .contenerslect input[type="radio"]');
       for (let i = 0; i < licenseRadios.length; i++) {
@@ -1858,18 +2436,15 @@
       }
     }
   </script>
-
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
     integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
-
+  <script src="../assets/js/strict.js"></script>
 </body>
 
 </html>
